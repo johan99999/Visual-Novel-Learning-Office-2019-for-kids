@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("office2019_visual_novel_for_kids")
+#define config.name = _("Mari Belajar Microsoft Office!")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
