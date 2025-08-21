@@ -4,6 +4,7 @@
 # name of the character.
 
 define e = Character("Ewing")
+define pov = Character("[povname]")
 
 
 
@@ -25,9 +26,16 @@ label start:
 
     # These display lines of dialogue.
 
-    e "Test Test."
+    e "Halo."
+    e "Kenalin, aku Ewing."
+    python:
+        povname = renpy.input("Nama kamu siapa?", length=32)
+        povname = povname.strip()
 
-    e "Lo Ngentot"
+        if not povname:
+            povname = "Tanpa Nama"
+    e "[povname], senang mengenalmu!"
+
 
     # This ends the game.
 
