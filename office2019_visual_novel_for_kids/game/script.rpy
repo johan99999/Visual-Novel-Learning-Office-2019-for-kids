@@ -51,6 +51,7 @@ label start:
             scene bg hint1
             show budi smile2
     b "oke, sebelum kita mulai, pastikan dulu kamu udah buka aplikasinya yah, agar kamu bisa langsung mencoba, agar tidak bingung, gunakan kombinasi di keyboard alt + tab, agar bisa berpindah antar aplikasi ya!"
+    b "atau kamu juga bisa memainkan game ini di hp sembari membuka aplikasi Microsoft Office di Laptop atau Komputer mu."
     scene bg first
     show budi laugh
     b "Nah, kamu mau belajar apa dulu nih?"
