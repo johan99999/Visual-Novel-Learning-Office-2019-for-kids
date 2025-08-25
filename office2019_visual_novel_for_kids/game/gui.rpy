@@ -478,3 +478,18 @@ init python:
 
         gui.nvl_button_width = 1860
         gui.nvl_button_xpos = 30
+
+style my_button:
+    background Frame("gui/button/start_idle.png")
+    hover_background Frame("gui/button/start_hover.png")
+    xsize 275
+    ysize 70
+    padding (10, 10)
+    xalign 0.5
+    yalign 0.5
+    font "gui/fonts/bebas.ttf"
+    size 28
+    color "#ffffff"
+    text_align 0.5
+   
+    

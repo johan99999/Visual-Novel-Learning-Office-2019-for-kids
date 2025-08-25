@@ -296,26 +296,26 @@ screen navigation():
         spacing 12
 
         if main_menu:
-            textbutton _("Start") action Start()
+            textbutton _("Start") action Start() style "my_button"
         else:
-            textbutton _("History") action ShowMenu("history")
-            textbutton _("Save") action ShowMenu("save")
+            textbutton _("History") action ShowMenu("history") style "my_button"
+            textbutton _("Save") action ShowMenu("save") style "my_button"
 
-        textbutton _("Load") action ShowMenu("load")
-        textbutton _("Preference") action ShowMenu("preferences")
+        textbutton _("Load") action ShowMenu("load") style "my_button"
+        textbutton _("Preference") action ShowMenu("preferences") style "my_button"
 
         if _in_replay:
             textbutton _("End Replay") action EndReplay(confirm=true)
         elif not main_menu:
             textbutton _("Main Menu") action MainMenu()
         
-        textbutton _("About") action ShowMenu("about")
+        textbutton _("About") action ShowMenu("about") style "my_button"
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-            textbutton _("Help") action ShowMenu("help")
+            textbutton _("Help") action ShowMenu("help") style "my_button"
 
         if renpy.variant("pc"):
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            textbutton _("Quit") action Quit(confirm=not main_menu) style "my_button"
 ## Main Menu screen ############################################################
 ##
 ## Used to display the main menu when Ren'Py starts.
